@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACTZY Script Store - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkUserLogin()">
+  <div id="loginContainer">
+    <h2>Login ke ACTZY Store</h2>
+    <input type="text" id="loginUsername" placeholder="Username" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button onclick="loginUser()">Login</button><h4>Belum punya akun?</h4>
+<input type="text" id="regUsername" placeholder="Buat Username">
+<input type="password" id="regPassword" placeholder="Buat Password">
+<button onclick="registerUser()">Sign Up</button>
+
+  </div>  <div id="mainContent" style="display:none">
+    <header>
+      <h1>ACTZY Script Store</h1>
+      <nav id="menuBar"></nav>
+      <button onclick="logoutUser()">Logout</button>
+    </header><section id="hero">
+  <h2>Selamat datang di toko script terpercaya</h2>
+  <p>Temukan script premium & gratis untuk berbagai keperluan</p>
+</section>
+
+<main>
+  <section id="productList" class="grid"></section>
+</main>
+
+<footer>
+  <p>&copy; 2025 ACTZY Store. All rights reserved.</p>
+</footer>
+
+  </div>  <script src="scripts/app.js"></script>  <script src="scripts/menu.js"></script></body>
+  </html>
